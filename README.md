@@ -9,18 +9,25 @@
 
 ---
 
-- [Propósito del laboratorio](#-propósito-del-laboratorio)
-- [Topología](#-topología)
-- [Direccionamiento IP](#-direccionamiento-ip)
-- [Configuración de la infraestructura](#️-configuración-de-la-infraestructura)
+## Índice
+
+- [Propósito del laboratorio](#propósito-del-laboratorio)
+- [Topología](#topología)
+  - [Direccionamiento utilizado](#direccionamiento-utilizado)
+- [Configuración de la infraestructura](#configuración-de-la-infraestructura)
   - [Red de Usuarios y DHCP](#red-de-usuarios-y-dhcp)
   - [NAT en Cisco](#nat-en-cisco)
   - [VPN IPsec Site-to-Site](#vpn-ipsec-site-to-site)
   - [Web Server HTTPS](#web-server-https)
   - [FortiGate](#fortigate)
-- [Pruebas de funcionamiento](#-pruebas-de-funcionamiento)
-- [Running Configuration](#-running-configuration)
-- [Conclusión](#-conclusión)
+- [Pruebas de funcionamiento](#pruebas-de-funcionamiento)
+  - [Conectividad hacia Internet](#conectividad-hacia-internet)
+  - [Comunicación Usuario → Web Server](#comunicación-usuario--web-server)
+  - [Traceroute hacia el servidor](#traceroute-hacia-el-servidor)
+  - [Prueba con el tráfico VPN bloqueado](#prueba-con-el-tráfico-vpn-bloqueado)
+  - [Restauración de la comunicación](#restauración-de-la-comunicación)
+- [Running Configuration](#running-configuration)
+- [Conclusión](#conclusión)
 
 ---
 
@@ -202,7 +209,7 @@ Esta comparación demuestra que la comunicación entre ambas redes depende del p
 
 ---
 
-# 📄 Running Configuration
+# Running Configuration
 
 La configuración completa del router Cisco R1 se encuentra en:
 
@@ -212,7 +219,7 @@ Incluye las configuraciones de red, DHCP, NAT y VPN IPsec utilizadas durante la 
 
 ---
 
-# 📝 Conclusión
+# Conclusión
 
 En esta práctica se implementó una VPN IPsec Site-to-Site entre un router Cisco y un FortiGate para comunicar la red de usuarios `10.8.27.0/25` con la red de servidores `172.8.27.0/28`.
 
